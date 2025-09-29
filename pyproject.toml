@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "code-bleu"
-version = "0.1.0"
-description = "Package for CodeBLEU calculations."
+version = "0.2.0"
+description = "Package for CodeBLEU calculations with C++ support."
 authors = ["Alena Pestova <alpestova1818@gmail.com>"]
 license = "MIT"
 readme = "README.md"
