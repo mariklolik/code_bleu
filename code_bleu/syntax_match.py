@@ -2,6 +2,7 @@
 # Licensed under the MIT license.
 
 import tree_sitter_c_sharp
+import tree_sitter_cpp
 import tree_sitter_go
 import tree_sitter_java
 import tree_sitter_javascript
@@ -9,6 +10,7 @@ import tree_sitter_python
 from tree_sitter import Language, Parser
 
 from .parser import (
+    DFG_cpp,
     DFG_csharp,
     DFG_go,
     DFG_java,
@@ -30,6 +32,7 @@ dfg_function = {
     "php": DFG_php,
     "javascript": DFG_javascript,
     "c_sharp": DFG_csharp,
+    "cpp": DFG_cpp,
 }
 
 tree_sitter_lib = {
@@ -38,6 +41,7 @@ tree_sitter_lib = {
     "go": tree_sitter_go,
     "javascript": tree_sitter_javascript,
     "c_sharp": tree_sitter_c_sharp,
+    "cpp": tree_sitter_cpp,
 }
 
 

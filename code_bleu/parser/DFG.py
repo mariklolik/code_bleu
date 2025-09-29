@@ -353,6 +353,11 @@ def DFG_java(root_node,index_to_code,states):
         
         return sorted(DFG,key=lambda x:x[1]),states
 
+def DFG_cpp(root_node,index_to_code,states):
+    # C++ uses the same DFG as C# since they share similar syntax structures
+    return DFG_csharp(root_node, index_to_code, states)
+
+
 def DFG_csharp(root_node,index_to_code,states):
     assignment=['assignment_expression']
     def_statement=['variable_declarator']
